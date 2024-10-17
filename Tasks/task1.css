@@ -1,0 +1,55 @@
+.taskbar{
+    border: 1px solid gray;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 200px 600px 50px;
+    grid-template-columns: 200px 400px 200px;
+    grid-template-areas: "a a a"
+                         "b c e"
+                         "d d d";
+    grid-gap: 5px;
+}
+
+[class^="block-"]{
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.block-1{grid-area: a;}
+.block-2{grid-area: b;}
+.block-3{grid-area: c;}
+.block-4{grid-area: e;}
+.block-5{grid-area: d;}
+
+.menu{
+    background-color: lightgrey;
+    font-size: 12px;
+    font-family: Tahoma;
+    padding: 2px;
+}
+.menu li{
+    display: inline-block;
+    width: 100px;
+    background-color: gray;
+    padding: 5px 10px;
+    position: relative;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.submenu{
+    display: none;
+}
+ul li.nested:hover > .submenu{
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+ul li.nested:hover > .submenu .submenu{
+    top: 0;
+    left: 120px;
+}
