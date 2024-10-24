@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 400px;
+    display: block;
+}
+
+.container{
+    flex-direction: row;
+}

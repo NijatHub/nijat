@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('/Tasks/images/halloween-gettyimages-1424736925.jpg');
+}
+
+.container{
+    padding: auto;
+}
+
+img{
+    width: 200px;
+}
+
+[class^="col-"]{
+    float: left;
+    
+}
+
+[class^="col-"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.col-sm-1{width: 10%;}
+.col-sm-2{width: 20%;}
+.col-sm-3{width: 30%;}
+.col-sm-4{width: 40%;}
+.col-sm-5{width: 50%;}
+.col-sm-6{width: 60%;}
+.col-sm-7{width: 70%;}
+.col-sm-8{width: 80%;}
+.col-sm-9{width: 90%;}
+.col-sm-10{width: 100%;}
+
+@media only screen and (min-width: 600px) {
+    .col-md-1{width: 10%;}
+    .col-md-2{width: 20%;}
+    .col-md-3{width: 30%;}
+    .col-md-4{width: 40%;}
+    .col-md-5{width: 50%;}
+    .col-md-6{width: 60%;}
+    .col-md-7{width: 70%;}
+    .col-md-8{width: 80%;}
+    .col-md-9{width: 90%;}
+    .col-md-10{width: 100%;}
+}
+
+@media only screen and (min-width: 800px){
+    .col-1{width: 10%;}
+    .col-2{width: 25%;}
+    .col-3{width: 30%;}
+    .col-4{width: 40%;}
+    .col-5{width: 50%;}
+    .col-6{width: 60%;}
+    .col-7{width: 70%;}
+    .col-8{width: 80%;}
+    .col-9{width: 90%;}
+    .col-10{width: 100%;}
+}
+
+.col-2{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    font-size: 24px;
+    font-weight: bold;
+    color: beige;
+}
+
+a:hover{
+    color: tomato;
+}
